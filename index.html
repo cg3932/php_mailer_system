@@ -1,0 +1,39 @@
+<html>
+ <head>
+  <title>PHP Mailer</title>
+  <style TYPE="text/css">
+    .textwidth {
+      width: 350px;
+    }
+    .textareawidth {
+      width: 350px;
+      height: 250px;
+    }
+    
+    .centerdiv {
+     width: 400px;
+     height: 400px;
+     position: relative;
+     top:50%; height:420px; margin-top:-210px;
+     margin-left: auto;
+     margin-right: auto;
+    }
+  </style>
+ </head>
+ <body>
+  <div class="centerdiv">
+   <h2>PHP Mailer</h2>
+  <form action="mailer.php" method="post" name="mail">
+    <table>
+    <tr><td>To:</td><td ><input type="text" name="to" class="textwidth"/></td></tr>
+    <tr><td>From:</td><td><input type="text" name="from" class="textwidth"/></td></tr>
+    <tr><td>Subject:</td><td><input type="text" name="subject" class="textwidth"/></td></tr>
+    
+    <tr><td>Message:</td><td><textarea name="message" class="textareawidth"></textarea></td></tr>
+    <tr><td><input type="submit" name="Send" /></td></tr>
+    </table>
+  </form>
+  </div>
+ </body>
+
+</html>
